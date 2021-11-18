@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>welcome</title>
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<style type="text/css">
+		#d2{
+			background-color: #ccc;
+			width: 500px;
+			height: 200px;
+			margin:auto;
+			margin-top: 50px;
+			padding: 10px;
+			box-shadow: 10px 10px 10px #E9EAEA;
+		}
+		.frm{
+			font-size: 1.5em;
+			color:purple;
+			font-family: Comic Sans Ms;
+			margin-top: 10px;
+
+		}
+		.btn{
+		padding: 10px;			
+		}
+		#img1{
+			margin-left: 50px;
+
+		}
+		#d1{
+			padding: 10px;
+
+		}
+
+	</style>
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(e){
+			$('#d2').hide();
+			$('#a1').click(function(e){
+				$('#d2').slideDown(500);
+
+			});
+			$('#img1').click(function(e){
+				$('#d2').slideUp(500);
+
+			});
+
+		});
+	</script>
+
+</head>
+<body>
+	<body bgcolor="lightYellow">
+      <h1> <p align="center"><font color="darkPink" size="10">Welcome To Get It Shop</font></h1>
+	<div id="d2" align="center">
+	<form name="frm-group" method="posts" >
+   <div class="frm">  
+    <img src="images/lock bag,cdr.png" id="img1" style="width:35px;height: 35px;"  align="right">  
+	<label>Username: </label>
+	<input type="text" name="uname" id="uname" required placeholder="username">		
+	
+  </div>
+  <div class="frm">
+  	<label>Password :</label>
+  	<input type="passwodr" name="pass1" id="pass1" required>
+  </div>
+  <div class="btn">
+  <button type="Login" class="w3-button w3-black w3-hover-purple ">Login</button>
+</div>
+   </form>
+
+	</div>
+<div id="d1" align="center">
+		<a href="#" class="w3-btn w3-aqua">Home</a>
+		<a href="#" class="w3-btn w3-amber">products</a>
+		<a href="#" class="w3-btn w3-blue">Contacts</a>
+		<a href="#"  id="a1" class="w3-btn w3-green">login</a>
+		
+
+
+	</div>		
+
+</body>
+</html>

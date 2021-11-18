@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Welcome</title>
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<style type="text/css">
+		.tab {
+          width:40%;
+          background-color: #f2f2f2;
+          padding: 16px 12px;
+          border-radius: 10px;
+          box-shadow: 12px 12px 12px #ccc;
+
+		}
+	</style>
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript">
+		$(document).ready(function(e){
+			//OnlOad Make LoginTable Invisible
+			$('#loginTab,#btn2').hide();
+			//after getting clicked on the btn login will come in slideDown Fashion
+            $('#btn').click(function(e){
+            	//At the time of click Button text will change to cancel.
+            	 $('#loginTab').slideDown(1000);
+            	 //Hide The Current Button Make it Visible the Cancel Button.
+            	 $(this).hide(1000);
+            	 $('#btn2').show(1000);
+            });
+            $('#btn2').click(function(e){
+            	//At the time of click Button text will change to cancel.
+            	 $('#loginTab').slideUp(1000);
+            	 //Hide the Current Button Make it visible the Login Button.
+                 $(this).hide(1000);
+                 $('#btn').show(1000);
+            });
+		});
+	</script>
+</head>
+<body>
+	<h4 align="center">Basic Animation of jQuery : Toggle Login form Application ...</h4>
+	<div align="center">
+	<button id="btn" class="w3-btn w3-amber"><img src="images/login.png" style="height:32px;width:32px;">Click Here Login</button>
+	<button id="btn2" class="w3-btn w3-blue"><img src="images/cancel.png" style="height:32px;width:32px;">Click Here to Cancel</button>
+	</div><br/><br/>
+	     <div id="loginTab" align="center">
+         <table class="tab">
+         	<tr>
+         		 <th>Username :</th>
+                 <td><input type="text" name="username" id="username" required placeholder="Username" class="w3-input"></td>
+         	</tr>
+            <tr>
+            	<th>Password :</th>
+            	<td><input type="password" name="pass1" id="pass1" required placeholder="Password" class="w3-input"></td>
+
+            </tr>
+            <tr>
+            	 <th></th>
+            	 <td>
+            	 	<button type="submit" name="btnLogin" value="login" class="w3-button w3-red">Login</button>
+                    <button type="reset" class="w3-button w3-green">Reset</button>
+            	 </td>
+
+            </tr>
+         </table>
+         </div>
+
+</body>
+</html>

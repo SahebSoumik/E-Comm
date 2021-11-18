@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head><title>Registration</title>
+	<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+<style type="text/css">
+
+	
+
+		.container{
+			padding:20px;
+			width:30%;
+			border:1px solid #ccc;
+			margin:auto;
+			font-family: Comic Sans Ms;
+			box-shadow: 8px 8px 8px #cccccc;
+
+
+		}
+		label{
+			margin-left: 10px;
+		}
+		.input{
+			margin-left:10px;
+			width:95%;
+			padding:5px;
+			border:none;
+			outline:none;
+			border-bottom:1px solid #ccc;
+		}
+		.input:focus{
+			-webkit-transition:all 0.6s ease-in-out;
+            border-bottom:2px solid #318446;
+		}
+		.w3-btn{
+			 width:40%;
+		}
+		.w3-btn:active{
+			opacity: 0.7;
+		}
+		.frm-group{
+			margin-top:10px;
+		}
+
+@media only screen and (max-width: 700px)
+	 	{
+	 		 .container{
+               width:100%;
+
+	 		 }
+	 		 div{
+      			-webkit-transition:all 0.4s ease-in-out;
+      			width: 100%;
+          
+     			}
+     					.w3-btn{
+			 box-shadow: 4px 4px 4px #ccc;
+		}
+	  }
+	  div{
+      			-webkit-transition:all 0.4s ease-in-out;
+      			width: 100%;
+          
+     	}
+	
+
+
+</style>
+
+
+</head>
+<body style="background-color: whitesmoke">
+	        <header class="header-1 w3-panel row">
+    <div class="row">
+      <div class="column3">
+<img src="imagep/get.png" .alt="No Such Image Exists!" id="img" style="" />
+</div>
+<div class="column3">
+  <a href="tel:+919830794025" style="text-decoration: none;"><img src="imagep/cal.png" height="20px" width="20px" class="" style="margin-right: 5px"/>Call us at: +919830794025</a>
+   <a href="tel:+917278796157" style="text-decoration: none;">,+917278796157</a>
+<a href="log-image.html" target="_blank"><button type="button" class="flash-button" >Login/Register</button></a>
+</div>
+</div>
+</header>
+<form name="frm" method="post" action="Reg.html" style="margin-top: 2%;margin-bottom: 3%">
+
+<div class="container">
+  <div class="frm-group">
+    <header><h2 align="center">Get It Carrers</h2></header>
+    	<hr color="#ccc"/>
+    <label>Name:</label>
+    <input type="name" name="nm" id="nm" required placeholder="Name" class="input" align="center">
+  </div>
+  <div class="frm-group">
+    <label>Phone:</label>
+    <input type="number" name="phone" id="phone" required placeholder="Phone" class="input" align="center">
+  </div>
+
+  <div class="frm-group">
+    <label>E-mail:</label>
+    <input type="email" name="email" id="email" required placeholder="e.g:abc@gmail.com" class="input" align="center">
+  </div>
+<div class="frm-group" style="margin-left: 25px">
+  <label>Qualification:</label>
+  <br>
+  <br>
+  <input type="radio" name="Qualification" id="Quali" value="Higher Secondary" class="" align="center">HS
+  <br>
+  <input type="radio" name="Qualification" id="Quali" value="Secondary" class="" align="center">Secondary
+  <br>
+  <input type="radio" name="Qualification" id="Quali" value="Other" class="" align="center">Other
+</div>
+<br>
+<div class="frm-group">
+	<label>Upload Your CV/Resume:</label>
+  <input type="file" name="pic" accept="doc/*" class="input" align="center">
+</div>
+	<div class="frm-group" align="center">
+    <button type="Submit" class="w3-btn w3-teal w3-padding-large">Submit</button>
+    <button type="Reset" class="w3-btn w3-teal w3-padding-large">Reset</button>
+</div>
+</div>
+
+</form>
+
+<div class="w3-row">
+          <div id="ABOUT" class="column2" style="background-color: #005ce6"> 
+            <hr color="#f2f2f2">
+ <p>ABOUT</p>
+            <p class="a1" ><a href="AboutUs.html" class="active" style="text-decoration: none;"> About Us</a></p>
+           <p class="a1"><a href="contact2.html" class="active" style="text-decoration: none;">Contact Us</a></p>
+           <p class="a1"><a href="careers.html" class="active" style="text-decoration: none;">Careers</a></p>
+           <p class="a1"><a href="#" class="active" style="text-decoration: none;">Press</a></p>
+          </div>
+          <div id="HELP"; class="column2" style="background-color:  #0066ff">
+            <hr color="#f2f2f2">
+            <p>HELP</p>
+            <p class="a1"><a href="Payments.html" class="active" style="text-decoration: none;">Payments</a></p>
+            <p class="a1"><a href="Shipping.html" class="active" style="text-decoration: none;">Shipping</a></p>
+            <p class="a1"><a href="#" class="active" style="text-decoration: none;">FAQ</a></p>
+            <p class="a1"><a href="return" class="active" style="text-decoration: none;">Cancellation & Returns</a></p>
+          </div>
+           <div id="POLICY" class="column2" style="background-color: #1a75ff">
+            <hr color="#f2f2f2">
+            <P>POLICY</P>
+            <p class="a1"><a href="return.html" class="active" style="text-decoration: none;">Return Policy</a></p>
+            <p class="a1"><a href="#" class="active" style="text-decoration: none;">Terms Of Use</a></p>
+            <p class="a1"><a href="security.html" class="active" style="text-decoration: none;">Security</a></p>
+            <p class="a1"><a href="Privacy.html" class="active" style="text-decoration: none;">Privacy</a></p>
+          </div>
+          <div id="MAIL" class="column2" style="background-color:  #3385ff;font-family: comic sans ms;
+      color: #ffff80;font-style: bold">
+            <p>MAIL US</p>
+            <p>Get It Shopping Hooghly</p>
+
+        <p>Ground Floor, Embassy Tech Village,</p>
+
+        <p>Outer Ring Road, Chuchura Village,</p>
+
+        <p>Hobli, West Bengal East Taluk,</p>
+
+        <p> Hooghly District,</p>
+
+        <p>West Bengal, India, 560103.</p>
+
+        <p>Telephone : 9830794025,</p>
+
+        <p>8013326678, 7278796157</p>
+          </div>
+          </div>
+
+</body>
+</html>

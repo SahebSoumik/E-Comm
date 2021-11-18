@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>welcome</title>
+<script type="text/javascript">
+function fun(){
+var email=document.getElementById("email").value;
+var r= /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+var em=document.getElementById("email");
+if(em.checkValidity()){
+//to test value with regular expression js has a function named as test()
+if(r.test(email))
+{
+//alert ("valid !");
+document.getElementById("errorEmail").innerHTML="";
+}else{
+//alert("Invalid Email !");
+document.getElementById("errorEmail").innerHTML="<font color='red'>
+Invalid Email Address.....!</font>";
+}
+}
+else
+document.getElementById("errorEmail").innerHTML="<font color='red'>"+em.
+validationMessage+"</font>";
+}
+</script>
+</head>
+<body>
+<!--
+what is Regular expression?
+a sequence of symbols and characters expressing, a string or pattern to be searched for within a longer piece of text.
+Regex for Email Id is :
+/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/; 
+-->
+<label>Email Id:</label>
+<input type="text" name="email" id="email" required placeholder="abc@example.com
+" onblur="fun()">
+<span id="errorEmail"></span>
+</body>
+</html>

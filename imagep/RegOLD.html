@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head><title>Registration</title>
+<style type="text/css">
+
+	
+
+		.container{
+			padding:40px;
+			width:30%;
+			border:1px solid #ccc;
+			margin:auto;
+			font-family: Comic Sans Ms;
+			box-shadow: 10px 10px 10px #cccccc;
+
+
+		}
+		label{
+			margin-left: 10px;
+		}
+		.input{
+			margin-left:10px;
+			width:90%;
+			padding:5px;
+			border:none;
+			outline:none;
+			border-bottom:1px solid #ccc;
+		}
+		.input:focus{
+			-webkit-transition:all 0.6s ease-in-out;
+            border-bottom:2px solid #318446;
+		}
+		.btn{
+             color:#fff;
+			 border:none;
+			 outline:none;
+			 width:40%;
+			 padding:10px;
+			 cursor: pointer;
+		}
+		.btn:active{
+			opacity: 0.7;
+
+		}
+		.btn-red{
+			background-color: blue;
+		}
+		.btn-blue{
+			background-color: skyblue;
+		}
+		.frm-group{
+			margin-top:10px;
+		}
+
+@media only screen and (max-width: 700px)
+	 	{
+	 		 .container{
+               width:80%;
+
+	 		 }
+	 		 div{
+      			-webkit-transition:all 0.4s ease-in-out;
+      			width: 80%;
+          
+     			}
+	  }
+	  div{
+      			-webkit-transition:all 0.4s ease-in-out;
+      			width: 80%;
+          
+     	}
+	
+
+
+</style>
+</head>
+<body>
+<form name="frm" method="post" action="Reg.html">
+
+<div class="container">
+  <div class="frm-group">
+    <header><h2 align="center">Registration Here</h2></header>
+    	<hr color="#ccc"/>
+    <label>Name:</label>
+    <input type="name" name="nm" id="nm" required placeholder="Name" class="input" align="center">
+  </div>
+  <div class="frm-group">
+    <label>Phone:</label>
+    <input type="number" name="phone" id="phone" required placeholder="Phone" class="input" align="center">
+  </div>
+
+  <div class="frm-group">
+    <label>E-mail:</label>
+    <input type="email" name="email" id="email" required placeholder="e.g:abc@gmail.com" class="input" align="center">
+  </div>
+<div class="frm-group">
+  <label>Password:</label>
+  <input type="password" name="pass1" id="pass1" required placeholder="Password" class="input" align="center">
+</div>
+<div class="frm-group">
+  <label>Confirm Password:</label>
+  <input type="password" name="pass2" id="pass2" required placeholder="Confirm Password" class="input" align="center">
+</div>
+	<div class="frm-group" align="center">
+    <button type="Registration" class="btn btn-red">Registration</button>
+    <button type="Reset" class="btn btn-blue">Reset</button>
+</div>
+</div>
+</form>
+</body>
+</html>

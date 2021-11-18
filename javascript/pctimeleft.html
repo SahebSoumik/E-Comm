@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>welcome</title>
+<style type="text/css">
+      #d1{
+      	 background-color: #f2f2f2;
+      	 width:24%;
+      	 margin:auto;
+      	 padding: 20px;
+      	 margin-top: 100px;
+      	}
+          #timer{
+          	background-color: #fff;
+          	color: #000;
+          	font-size: 24px;
+          	width: 20%;
+          	margin: auto;
+          	padding: 20px;
+          	border: 2px solid #fff;
+          	box-shadow: 12px 12px 12px #ccc;
+        }
+        </style>
+        </head>
+<body>
+<div id="timer" align="center">Time left:</div>
+<span id="warning"></span>
+<div id="d1">
+     <form name="frm">
+     	<label>Name:</label>
+    <input type="text" name="cname" id="cname">
+    <button>Submit</button>
+     </form>
+     </div>	
+ </body>
+ </html>
+ <script type="text/javascript">
+ var count=10;//providing time limit here in seconds....
+ var k=setlnterval(function(){
+ // Time left message goes here...
+   document.getElementById("timer").innerHTML="<img src='images/Last_warn_sign.png' style='height:32px;width:32px;'/> Time left:"+(cout-)+"sec";
+    if(cout==4){
+     document.getElementById("timer").style.backgroundcolor="blue";
+     document.getElementById("timer").style.color='#fff';
+     document.getElementById("warning").innerHTML="<center>
+     <font color='green'>you have 5 secs left...</font>
+     </center>";
+ }
+    if(count==0){
+    //Timer will be stopped at this point when cout gets zero.
+    clearInterval(k);//clearing the existing timer....
+  alert("oop's Times UP\ n Better Luck Next Time!");//showing popup message...
+  window.location.href='cancelp.html';//redirecting the page to cancelp.html page..
+}
+},1000);
+</script>

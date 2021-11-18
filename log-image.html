@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<style type="text/css">
+	.logcontainer
+		{
+			height: 420px;
+      width: 50%;
+      margin:auto;
+      margin-top: 80px;
+       border:2px solid skyblue;
+       box-shadow: 3px 3px 3px #ccc;
+
+            	}
+
+		.input:focus
+		{
+			-webkit-transition:all 0.6s ease-in-out;
+            border-bottom:2px solid #318446;
+		}
+		.btn{
+             color:#fff;
+			 border:none;
+			 outline:none;
+			 width:35%;
+			 padding:10px;
+			 cursor: pointer;
+		}
+		.btn:active{
+			opacity: 0.7;
+
+		}	
+    .w3-modal-content{
+      width: 45%;
+    }
+
+
+.float{
+	position:fixed;
+	width:55px;
+	height:55px;
+	left:25px;
+  top: 15px;
+	background-color:#efeff5;
+	color:gray;
+	border-radius:50px;
+	text-align:center;
+  box-shadow: 3px 3px 3px 1px #999;
+  opacity: 0.7;
+}
+.my-float{
+	margin-top:16px;
+  font-size: 25px;
+}
+
+    @media only screen and (max-width: 900px)
+    {
+       .logcontainer{
+               width:95%;
+               height: auto;
+
+       }
+       .btn{
+        width: 40%;
+       }
+       div{
+            -webkit-transition:all 0.4s ease-in-out;
+            width: 100%;
+          
+          }
+    }
+          div{
+            -webkit-transition:all 0.4s ease-in-out;
+            width: 100%;
+          
+      }	
+      .img{
+        height:auto; 
+        width:30%;
+        margin-left: 5%;
+      }
+         .w3-modal-content{
+      width: 60%;
+    }
+        }
+@media only screen and (max-width: 500px)
+	 	{
+	 		 .logcontainer{
+               width:100%;
+               height: auto;
+
+	 		 }
+	 		 .btn{
+	 		 	width: 40%;
+	 		 }
+	 		 div{
+      			-webkit-transition:all 0.4s ease-in-out;
+      			width: 100%;
+          
+     			}
+	  }
+	        div{
+      			-webkit-transition:all 0.4s ease-in-out;
+      			width: 100%;
+          
+     	}
+      .img{
+        width: 100%
+        height:auto;
+      }
+         .w3-modal-content{
+      width: 100%;
+    }
+     }
+
+	</style>
+	 <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+          <script type="text/javascript" src="js/materialize.min.js">
+
+
+      </script>
+
+</head>
+<body bgcolor="#efeff5">
+
+<!-- Code begins here -->
+
+<a href="myproject1.html" class="float">
+<i class="fa fa-arrow-left my-float" style="font-size:;"></i>
+</a>
+
+<div class="logcontainer w3-white">
+   <h5 class=" w3-padding-large" style="margin-left:5px;color: #0099cc "><b>For Perception Convenience</b></h5>
+  <button onclick="document.getElementById('id01').style.display='block'" class="w3-button" style="margin-left:25px;margin-top:0;"><a class="btn-floating btn-large pulse" >Log In</a></button>
+
+ <img src="imagep/loginw.png" .alt="No Such Image Exists!" class="img" style="height:;width:;margin-left:0px;margin-top:0">
+<img src="imagep/loGw1.png" .alt="No Such Image Exists!" class="img" style="height:280px;width:260px;margin-top:">
+
+  
+  <div id="id01" class="w3-modal">
+    <div class="w3-modal-content" style="width:45%">
+      <div class="container" style="width:100%;height:">
+
+        <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright w3-xlarge">&times;</span>
+
+<form name="frm" method="post" action="Login.html" style="margin:;border:1px solid #ccc;">
+
+      <div class="row" style="margin-top: 55px;">
+    <div class="col s12" style="margin-left: 10%">
+      <div class="row">
+        <div class="input-field col s12">
+          <i class="material-icons prefix">email</i>
+          <input type="email" name="email" id="autocomplete-input" class="autocomplete" style="width: 70%; ">
+          <label for="autocomplete-input">E-mail/Phone Number</label>
+        </div>
+      </div>
+    </div>
+  </div>
+
+      <div class="row" style="width:">
+    <div class="col s12"  style="margin-left: 10%;">
+      <div class="row">
+        <div class="input-field col s12">
+          <i class="material-icons prefix">lock</i>
+          <input type="Password" name="pass" id="autocomplete-input2" class="autocomplete2" style="width: 70%">
+          <label for="autocomplete-input2">Password</label>
+        </div>
+      </div>
+    </div>  
+
+  <div align="center">
+    <button type="submit" class="btn">Log In</button>
+    <button type="Reset" class="btn">Reset</button>
+
+<br>
+<br>
+<br>
+  </div>
+</form>
+
+
+      </div>
+    </div>
+  </div>
+</div>
+<marquee scrollamount="6" direction="right" onmouseover="this.stop()" onmouseout="this.start()" class="marq" style="width: 95%;margin-left: 3%;background-color: #0099cc"><div align="center"><p><pre><u><a href="Reg.html" target="_blank" class="w3-text-white" > New here? Click here To Register</a></u></p></pre></marquee>
+</div>
+</body>
+</html>

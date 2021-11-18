@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>wc</title>
+	<script type="text/javascript">
+	function fun(){
+		var salary = document.getElementById("salary");
+		if(salary.checkValidity()){
+			document.getElementId("errorSalary").innerHTML="";
+		}else{document.getElementById("errorSalary").innerHTML="<font color='red'>"
+		+salary.validationMessage+"</font>";
+	}
+
+}
+	</script>
+</head>
+<body>
+<div>
+<label> Salary: </label>
+<input type="number" name="salary" id="salary" max="80" min="18" onblur="fun()" required>
+<span id="errorSalary"></span>
+</div>
+</body>
+</html>
+		
+
+
+
+
+	
+	

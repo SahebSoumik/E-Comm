@@ -1,0 +1,63 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="compiled/flipclock.css">
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+		<script src="compiled/flipclock.min.js"></script>
+
+	</head>
+	<body>
+
+	
+<div class=""> <span id="days"></span> :<span id="hours"></span> :<span id="minutes"></span> :<span id="seconds"></span></div>
+<div class="message">
+</div>
+
+      <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+   <script type="text/javascript" src="jquery.js"></script>
+     <script type="text/javascript">
+
+   setInterval(function(){
+    // set whatever future date / time you want here, together with
+    // your timezone setting...
+
+    var future = new Date("Sep 20 2018 21:15:00 GMT+0200");
+    var now = new Date();
+    var difference = Math.floor((future - now) / 1000);
+
+    var seconds = fixIntegers(difference % 60);
+    difference = Math.floor(difference / 60);
+
+    var minutes = fixIntegers(difference % 60);
+    difference = Math.floor(difference / 60);
+
+    var hours = fixIntegers(difference % 24);
+    difference = Math.floor(difference / 24);
+
+    var days = difference;
+
+    $("#seconds").text(seconds + "s");
+    $("#minutes").text(minutes + "m");
+    $("#hours").text(hours + "h");
+    $("#days").text(days + "d");
+}, 1000);
+
+
+function fixIntegers(integer)
+{
+    if (integer < 0)
+        integer = 0;
+    if (integer < 10)
+        return "0" + integer;
+    return "" + integer;
+}
+
+</script>
+
+	
+	</body>
+</html>
+	
+		
+

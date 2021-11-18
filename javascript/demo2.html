@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Welcome</title>
+	<script type="text/javascript">
+		function fun(){
+        var p1 = document.getElementById("p1");
+        var p2 = document.getElementById("p2");
+        var ch1 = document.getElementById("ch1");
+
+        if(ch1.checked) p1.type=p2.type='text';
+        else p1.type=p2.type='password';
+
+
+		}
+		function fun2(){
+         var p1 = document.getElementById("p1").value; 
+         var p2 = document.getElementById("p2").value;
+         if(p1 == p2){
+           document.getElementById("errorPass").innerHTML="";
+         }else {
+         	document.getElementById("errorPass").innerHTML="<font color='red'>Password does not match !</font>";
+         }
+         
+		}
+	</script>
+</head>
+<body>
+	    Password : <input type="password" name="p1" id="p1" required ><br/>
+	    Retype Password : <input type="password" name="p2" id="p2" required onblur="fun2()" ><span id="errorPass"></span><br/>
+	    <input type="checkbox" name="ch1" id="ch1" onchange="fun()">Show / Hide
+	    
+     
+</body>
+</html>

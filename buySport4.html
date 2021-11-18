@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>welcome</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+.radio{
+  margin-left: 35px;
+  font-size: 28px;
+}
+.w3-row{
+  width: 70%;
+  background-color: white;
+  height: 420px;
+}
+.zoom1 {
+    transition: transform .2s;
+    margin: auto;
+    width:48%;
+    margin-top: 55px;
+}
+.zoom1:hover {
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.5); 
+}
+.label:before {
+    content: ' \20B9';
+}
+.label1:before {
+    content: ' \20B9';
+}
+    .w3-sidebar{
+      width: 28%;
+    }
+
+
+     .open-button {
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  margin-left:55%;margin-top:0px;width:15% 
+
+  }
+
+/* The popup chat - hidden by default */
+.chat-popup {
+  display: none;
+  position: fixed;
+  top: 10px;
+  right: 15px;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  margin-top: 10px;
+  max-width: 350px;
+  padding: 10px;
+background-color:#f2f2f2;#e6f0ff;
+border:1px solid darkgray;
+box-shadow: 3px 3px 3px #ccc;
+}
+
+/* Set a style for the submit/send button */
+.form-container .cancel {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 28px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color:;
+}
+
+/* Add some hover effects to buttons */
+.form-container .cancel:hover, .open-button:hover {
+  opacity: 1;
+}
+.mySlides {display:none}
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+.w3-badge {height:15px;width:15px;padding:0;color:#ccc;margin-top:8px;}
+
+.continue{
+padding: 10px;margin-left:5%;width:20%;
+}
+
+ 
+      @media only screen and (max-width: 900px)
+    {
+     .w3-row{
+  width: 95%;
+  height: 990px;
+}
+.w3-btn{
+  width: 
+    }
+     .w3-sidebar{
+      width: 28%;
+    }
+        .open-button {
+          width:30%;
+ margin-top: 0px;
+ margin-left: 70%
+
+  }
+       .zoom1 {
+    width:80%;
+    height:200px;
+    }
+  .continue{
+    margin-left:%;width:60%;
+}
+  }
+     @media only screen and (max-width: 500px)
+    {
+     .w3-row{
+  width: 95%;
+  height: 1900px;
+}
+.w3-btn{
+  width: 
+    }
+     .w3-sidebar{
+      width: 28%;
+    }
+       .zoom1 {
+    width:80%;
+    height:200px;
+    }
+     .open-button {
+           width:58%;
+ margin-top: 0px;
+ margin-left: 30%
+
+  }
+  .continue{
+margin-left:3%;width:110%;
+}
+
+}
+</style>
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+   <script type="text/javascript" src="jquery.js"></script>
+  <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+        $(".flip").click(function(){
+        $(".panel").show();
+        });
+        $(".cancel").click(function(){
+        $(".panel").fadeOut(400);
+        });
+       });
+  </script>
+</head>
+<body bgcolor="#e6f0ff">
+
+  <div class="panel chat-popup" id="myForm" style="">
+  <form action="/action_page.php" class="form-container">
+  <div class="w3-container">
+  <input type="radio" name="pay" class="radio w3-container" value="Credit/Debit/ATM Card">Credit/Debit/ATM Card<img src="imagep/atm.png" height="55px" width="58" style="margin-left: 10px" />
+</div>
+  <br>
+  <div class="w3-container">
+  <input type="radio" name="pay" class="radio" value="Net Banking">Net Banking<img src="imagep/bank.png" height="50px" width="53" style="margin-left: 10px" />
+</div>
+  <br>
+    <div class="w3-container">
+  <input type="radio" name="pay" class="radio" value="Cash On Delivery">Cash On Delivery<img src="imagep/cod.png" height="60px" width="80" style="margin-left: 10px"/>
+</div>
+      <div style="">
+        <h4 class="w3-container w3-text-white w3-blue" style="margin-top: 0">Price Details</h4>     
+                <p style="font-size:15px;color: gray;margin-left: 35px ">Total Amount---<label class="label1" style="margin">2,000/-</label></p>
+        <p style="font-size:15px;color: gray;margin-left: 35px ">Delivery Charge---<label style="margin;color: orange">Free</label></p>
+        <hr>
+        <b><p style="font-size:15px;color: gray;margin-left: 35px  ">Order Total---<label class="label1" style="margin:auto">2,000/-</label></p><b>
+      </div>
+<div class="w3-container">
+  <button class="w3-btn w3-pale-blue w3-border w3-border-indigo w3-round" style="padding:10px 20px;">Place Order</button>
+  <button class="w3-btn w3-pale-blue w3-border w3-border-indigo w3-round" style="padding: 10px 20px;"> Cancel</button></a>
+  </div>
+  <br>
+      <button type="button" class="w3-blue cancel">Close</button>
+</form>
+</div>
+
+<script>
+function openForm() {
+    document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+    document.getElementById("myForm").style.display = "none";
+}
+</script>
+
+<div class="w3-container ">
+    <button class="flip w3-btn open-button w3-container w3-text-white w3-blue w3-padding">Payment Options</button>
+<h3 class="w3-container" style="text-shadow:2px 2px 2px #ccc;font-style: bold;
+    font-family: verdana;margin-left:3%;margin-top: 35px">Welcome Guest The Details Of Your Selected Product</h3>
+ 
+<div class="w3-row w3-border w3-border-blue" style="margin-left: 35px;margin-top:20px;box-shadow: 3px 3px 3px #ccc; ">
+
+
+  <div class="w3-container w3-half"> 
+  <div class="w3-content w3-display-container" align="center">
+        <a href="sports.html">
+<img src="sports/4.jpeg" class="zoom1"; .alt="No Such Image Exists!" title="Cycling helmet" />
+</a>
+<h3 class="w3-container">Cycling helmet</h3>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-white";
+}
+</script>
+
+    <div align="center">
+          <label style="font-size: 25px" class="label1">20,000/-</label>
+          <label style="text-decoration: line-through; font-size: 20px; color: darkgray" class="label1">40,000/-</label>
+          <label style="font-size: 14px;color:white;background-color: orange;padding: 3px">50% OFF</label>                  
+           </div>
+</div>
+
+<div class="w3-container w3-half" >
+   <h3>Sports Item</h3>
+   <h4>Premium quality upper provides breathability.
+Easy lacing system with high quality nylon laces.
+Memory Foam lightweight insole provides more cushioning and comfort.
+High quality padding in collar and tongue upper better comfort and grip.
+Advanced Flow+ technology helps provide multidirectional traction and grip..</h4>
+   <div>
+
+</div> 
+</div>
+  </div>
+  <br>
+  <div class="w3-container" style="margin:auto">
+    <a href="myproject1.html"><button class="continue w3-btn w3-pale-blue w3-border w3-border-indigo w3-round" style="box-shadow: 2px 2px 2px #ccc"> < Continue Shopping<img src="imagep/buy.png" height="35px" width="35px" style="" /></button></a>
+    <a href="">
+  </div>
+
+
+
+</div>
+
+</body>
+</html>

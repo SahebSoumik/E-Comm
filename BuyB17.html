@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>welcome</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+.radio{
+  margin-left: 35px;
+  font-size: 28px;
+}
+.w3-row{
+  width: 80%;
+  height: 550px;
+  background-color: white;
+}
+.zoom1 {
+    transition: transform .2s;
+    height: 240px;
+    width:30%;
+    margin:auto;
+    margin-top: 60px;
+    margin-left: 30%;
+}
+.zoom1:hover {
+    -ms-transform: scale(1.4); /* IE 9 */
+    -webkit-transform: scale(1.4); /* Safari 3-8 */
+    transform: scale(1.4); 
+}
+.label:before {
+    content: ' \20B9';
+}
+.label1:before {
+    content: ' \20B9';
+}
+    .w3-sidebar{
+      width: 28%;
+    }
+
+
+    .open-button {
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  margin-left:53%;margin-top:0px;width:15%;
+  z-index: 160; 
+
+  }
+
+/* The popup chat - hidden by default */
+.chat-popup {
+  display: none;
+  position: fixed;
+  top: 10px;
+  right: 15px;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  margin-top: 0;
+  max-width: 350px;
+  padding: 10px;
+background-color:#f2f2f2;#e6f0ff;
+border:1px solid darkgray;
+box-shadow: 3px 3px 3px #ccc;
+}
+
+/* Set a style for the submit/send button */
+.form-container .cancel {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 28px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color:;
+}
+
+/* Add some hover effects to buttons */
+.form-container .cancel:hover, .open-button:hover {
+  opacity: 1;
+}
+.mySlides {display:none}
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+.w3-badge {height:15px;width:15px;padding:0;margin-left:10px;color:#ccc;margin-top:8px;}
+
+.continue{
+padding: 10px;margin-left:5%;width:20%;
+}
+
+ 
+      @media only screen and (max-width: 900px)
+    {
+     .w3-row{
+  width: 90%;
+  height: 500px;
+}
+.w3-btn{
+  width: 
+    }
+     .w3-sidebar{
+      width: 28%;
+    }
+        .open-button {
+          width:30%;
+ margin-top: 0px;
+ margin-left: 70%
+
+  }
+         
+       .zoom1 {
+    height: auto;
+    }
+  .continue{
+    margin-left:%;width:60%;
+}
+  }
+     @media only screen and (max-width: 500px)
+    {
+     .w3-row{
+  width: 90%;
+  height: 1090px;
+}
+.w3-btn{
+  width: 
+    }
+     .w3-sidebar{
+      width: 28%;
+    }
+       
+       .zoom1 {
+    height:200px;
+    }
+     .open-button {
+  width:58%;
+  margin-top: 0px;
+  margin-left: 30%;
+  box-shadow:3px 3px 3px #ccc;
+  }
+  .chat-popup {
+  top: 45px;
+}
+  .continue{
+margin-left:3%;width:110%;
+}
+
+}
+</style>
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+   <script type="text/javascript" src="jquery.js"></script>
+  <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+        $(".flip").click(function(){
+        $(".panel").show();
+        });
+        $(".cancel").click(function(){
+        $(".panel").fadeOut(400);
+        });
+       });
+  </script>
+</head>
+<body bgcolor="#e6f0ff">
+
+  <div class="panel chat-popup" id="myForm" style="">
+  <form action="/action_page.php" class="form-container">
+  <div class="w3-container">
+  <input type="radio" name="pay" class="radio w3-container" value="Credit/Debit/ATM Card">Credit/Debit/ATM Card<img src="imagep/atm.png" height="55px" width="58" style="margin-left: 10px" />
+</div>
+  <br>
+  <div class="w3-container">
+  <input type="radio" name="pay" class="radio" value="Net Banking">Net Banking<img src="imagep/bank.png" height="50px" width="53" style="margin-left: 10px" />
+</div>
+  <br>
+    <div class="w3-container">
+  <input type="radio" name="pay" class="radio" value="Cash On Delivery">Cash On Delivery<img src="imagep/cod.png" height="60px" width="80" style="margin-left: 10px"/>
+</div>
+      <div style="">
+        <h4 class="w3-container w3-text-white w3-blue" style="margin-top: 0">Price Details</h4>     
+                <p style="font-size:15px;color: gray;margin-left: 35px ">Total Amount---<label class="label1" style="margin">2,000/-</label></p>
+        <p style="font-size:15px;color: gray;margin-left: 35px ">Delivery Charge---<label style="margin;color: orange">Free</label></p>
+        <hr>
+        <b><p style="font-size:15px;color: gray;margin-left: 35px  ">Order Total---<label class="label1" style="margin:auto">2,000/-</label></p><b>
+      </div>
+<div class="w3-container">
+  <button class="w3-btn w3-pale-blue w3-border w3-border-indigo w3-round" style="padding:10px 20px;">Place Order</button>
+  <button class="w3-btn w3-pale-blue w3-border w3-border-indigo w3-round" style="padding: 10px 20px;"> Cancel</button></a>
+  </div>
+  <br>
+      <button type="button" class="w3-blue cancel">Close</button>
+</form>
+</div>
+
+<script>
+function openForm() {
+    document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+    document.getElementById("myForm").style.display = "none";
+}
+</script>
+
+
+
+
+<div class="w3-container ">
+    <button class="flip w3-btn open-button w3-container w3-text-white w3-blue w3-padding">Payment Options</button>
+<h3 class="w3-container" style="text-shadow:2px 2px 2px #ccc;font-style: bold;
+    font-family: verdana;margin-left:3%;margin-top: 35px">Welcome Guest The Details Of Your Selected Product</h3>
+ 
+<div class="w3-row w3-border w3-border-blue" style="margin-left: 35px;margin-top:20px;box-shadow: 3px 3px 3px #ccc; ">
+  <div class="w3-container w3-half"> 
+  <div class="w3-content w3-display-container" ">
+        <a href="wearB.html">
+<img src="jama/17.jpeg" class="zoom1"; .alt="No Such Image Exists!" title="Kid's Ware" />
+</a>
+</div>
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-white";
+}
+</script>
+<h3 class="w3-container" style="margin-left: 20%">Round Neck T-Shirt</h3>
+    <div style="margin-left: 18%">
+          <label style="font-size: 25px" class="label1"> 2,000/-</label>
+          <label style="text-decoration: line-through; font-size: 20px; color: darkgray" class="label1">4,000/-</label>
+           <label style="font-size: 14px;color:white;background-color: orange;padding: 3px">50% OFF</label>                  
+           </div>
+</div>
+
+
+<div class="w3-container w3-half" >
+
+  <h2>Kid'S Wear</h2>
+   <h5>Function and design must meet at the right proportions in children's clothing for it to be popular and accepted. Fabric choices, openings and fastenings, fit and ease, trimmings used are all major considerations when designing children's wear. Some other factors a designer designing for children's clothing should focus on are the changing shape of the growing kid and different proportions of the different parts of the body.American sizes for baby clothes are usually based on the child's weight. European sizes are usually based on the child's height. These may be expressed as an estimated age of the child, e.g., size 6 months (or 3–6 months) is expected to fit a child 61 to 67 centimetres (24 to 26 in) in height and 5.7 to 7.5 kilograms (13 to 17 lb) in weight. </h5>
+   <div>
+
+
+</div> 
+</div>
+  </div>
+  <br>
+  <div class="w3-container" style="margin:auto">
+    <a href="myproject1.html"><button class="continue w3-btn w3-pale-blue w3-border w3-border-indigo w3-round" style="box-shadow: 2px 2px 2px #ccc"> < Continue Shopping<img src="imagep/buy.png" height="35px" width="35px" style="" /></button></a>
+    <a href="">
+  </div>
+
+
+
+</div>
+
+</body>
+</html>

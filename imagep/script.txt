@@ -1,0 +1,24 @@
+<script>
+var numbers = [65, 44, 12, 4,5,10];			<!-- Ekhane akta pager joto gulo daam ache toto gulo likhte hobe --!>
+
+
+<!-- Rest of work Done in this part --!>
+
+
+
+function getSum(total, num) {
+    return total + num;
+}
+function myFunction(item) {
+    document.getElementById("demo").innerHTML = numbers.reduce(getSum);
+}
+</script>
+
+<!-- ei jinis ta jodi lagano hye then protita page e akta  kore button dite hobe as follows --!>
+
+<p>Click the button to get the sum of the numbers in the array.</p>
+<button onclick="myFunction()">Try it</button>
+
+<p>Sum of numbers in array: <span id="demo"></span></p>
+
+<!-- modda kotha dtaabse chara hobe na sir ke bolte hobe --!>

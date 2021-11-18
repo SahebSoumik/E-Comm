@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form</title>
+	<link rel="stylesheet" type="text/css" href="https://www.w3schools.com/w3css/4/w3.css">
+	<style type="text/css">
+		#reg{
+			padding:150px;
+			border-radius: 5px;
+			box-sizing: border-box;
+			margin-left: 280px;
+		}
+		.name{
+			color: powderblue;
+    		padding: 10px;
+   			font-family: Arial;
+		}
+		.lebel{
+				background-color: violet;
+		}
+		input[type=text] {
+    	width: 100%;
+    	padding: 12px 20px;
+   		margin: 8px 0;
+   		box-sizing: border-box;
+    	border: none;
+   		border-bottom: 2px solid red;
+		}
+		input[type=number] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid red;
+}
+input[type=E-mail] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid red;
+}
+input[type=Password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid red;
+}
+select {
+    width: 100%;
+    padding: 16px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #f1f1f1;
+}
+button {
+    background-color: #80971E;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+	</style>
+</head>
+<body>
+	<div id="reg">
+	<form method="post" action="form.php" >
+		<table>
+		<tr>
+			
+			<td><span class="name lebel"><label>Name:-</label></span><div id="col-1"><input type="text" name="Naam"></td></div>
+			<div id="age"><tr><td><span class="name lebel"><label>Age:-</label></span><input type="number" name="Aage"></td></tr></div>
+			<div id="no"><tr><td><span class="name lebel"><label>Phone:-</label></span><input type="number" name="Ph" maxlength="10" minlength="10"></td></tr></div>
+			<div id="mail"><tr><td><span class="name lebel"><label>E-mail:-</label></span><input type="E-mail" name="email"></td></tr></div>
+			<div id="gen"><tr><td><span class="name lebel"><label>Gender:-</label></span><input type="radio" name="sex" value="Male">Male
+			<input type="radio" name="sex" value="Female">Female</td></tr></div>
+			<div><tr><td><span class="name lebel"><label>City:-</label></span><select name="city">
+				<option value="kolkata">Kolkata</option>
+				<option value="delhi">Delhi</option>
+				<option value="gujrat">Gujrat</option>
+				<option value="punjab">Punjab</option>
+			</select></td></tr></div>
+			<div><tr><td><span class="name lebel"><label>Password:-</label></span><input type="Password" name="pass"></td></tr></div>
+			<div><tr><td><span class="name lebel"><label>Retype Password:-</label></span><input type="Password" name="repass"></td></tr></div>		
+		</tr>			
+		</table>
+		<button>Submit</button>
+		</form>
+	</div>
+<a href="http://www.reliablecounter.com" target="_blank"><img src="https://www.reliablecounter.com/count.php?page=loacalhost/test.com10308555&digit=style/plain/6/&reloads=1" alt="tumblr visitor counter" title="tumblr visitor counter" border="0"></a><br /><a href="http://www.reliablecounter.com/de/" target="_blank" style="font-family: Geneva, Arial; font-size: 9px; color: #330010; text-decoration: none;">tumblr visitor counter</a>
+</body>
+</html>

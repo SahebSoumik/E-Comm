@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+	<style type="text/css">
+
+
+ body{
+      background-color:#f2f2f2;
+
+    }
+    .label1:before {
+    content: ' \20B9';
+}
+    #container{
+    	background-color: white;
+    	width: 97%;
+    	margin:auto;
+      padding: 0;
+    }
+
+
+.zoom1 {
+    transition: transform .2s;
+    margin: 0 auto;
+    width:65%;
+    margin-top: 35px;
+}
+		.a3{
+			background-color: black;
+			color: #fff;
+			font-family: Adobe Heiti Std;
+
+		}
+		.a2{
+			background-color: #dfff80;#ff6666; 
+			color: #000;
+			font-family: Lusitana;
+		}
+		.d1{
+			height: 50px;
+			width: 100%;
+			font-size: 28px;
+		  -webkit-position:sticky;
+      position: sticky;
+      top: 100px;
+      z-index: 100;
+      margin: 0;
+      padding: 0; 	
+		}
+
+   .column2 {
+    float: left;
+    width: 25%;
+    padding: 10px;
+    height: 400px;
+    font-size: 14px;
+    font-family: verdana;
+    color: #00e600;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+    .a1
+    {
+     
+      color:#e6ffe6;
+      font-size: 12px;
+    }
+    .a1:hover
+    {
+     color:#df80ff;
+     text-decoration:none;
+    }
+    .a1:active
+    {
+      color: violet;
+    }
+    .buy{
+      height:50px; 
+      width:50px;
+    }
+    .free{
+      height:40px; 
+      width:95px;
+    }
+	
+		     @media only screen and (max-width: 900px){
+      .container{
+        width: 100%;
+      }
+      .d1{
+        font-size: 18px;
+        width: 100%;
+        height: auto;
+      }
+
+      .zoom1 {
+    width:100%;
+    height: auto;
+}
+
+  }
+
+  		     @media only screen and (max-width: 500px){
+      .container{
+        width: 100%;
+      }
+      .d1{
+        font-size: 18px;
+        width: 100%;
+        height: auto;
+        top:122px;
+      }
+
+        .zoom1 {
+    width:100%;
+    height: auto;
+}
+  .column2 {
+    width: 25%;
+    height: 570px;
+    padding: 6px;
+    font-size: 10px;
+
+  }
+      .buy{
+      height:30px; 
+      width:30px;
+    }
+        .free{
+      height:20px; 
+      width:65px;
+    }
+
+  }
+	
+	</style>
+		<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function(){
+	    var count=0;
+	    setInterval(function(){
+	    if(count%3==0){
+    $('.d1').addClass('a3'); 
+    $('.d1').removeClass('a2');   
+    }	
+    else{
+    $('.d1').addClass('a2');
+    $('.d1').removeClass('a3');	
+    }count++;
+	},1500);
+	});
+	</script>
+
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+
+</head>
+<body>
+<header class="header-1 w3-panel row" style="width: 97%;margin: auto;">
+    <div class="row">
+      <div class="column3">
+<img src="imagep/get.png" .alt="No Such Image Exists!" id="img" style="" />
+</div>
+<div class="column3">
+  <a href="tel:+919830794025" style="text-decoration: none;"><img src="imagep/cal.png" height="20px" width="20px" class="" style="margin-right: 5px"/>Call us at: +919830794025</a>
+   <a href="tel:+917278796157" style="text-decoration: none;">,+917278796157</a>
+<a href="log-image.html" target="_blank"><button type="button" class="flash-button" >Login/Register</button></a>
+</div>
+</div>
+</header>
+
+
+<center id="container">
+<!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container1" style="margin: 0;padding: 0">
+<div class="ws_images"><ul>
+    <li><a href="http://wowslider.net"><img src="data2/images/ofg1.png" alt="slider html" title="ofg1" id="wows1_0"/></a></li>
+    <li><img src="data2/images/off.png" alt="OFF" title="OFF" id="wows1_1"/></li>
+  </ul></div>
+<div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.net">javascript carousel</a> by WOWSlider.com v8.8</div>
+<div class="ws_shadow"></div>
+</div>  
+<script type="text/javascript" src="engine2/wowslider.js"></script>
+<script type="text/javascript" src="engine2/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+
+
+  <div class="d1"><img src="imagep/buy.png" class="buy" style="margin-bottom: 7px" />BUY 2 & GET THE 3rd ONE<img src="imagep/free.jpg" class="free" style="margin-bottom: 7px" />
+</div>
+<hr color="2px dodgerblue" style="margin-top: 1px"/>
+<div class="w3-row">
+<div class="w3-third w3-container" style="box-shadow: 4px 4px 4px #bfbfbf">  
+        <a href="T-Shirts & Shirts.html">
+<img src="Shirts/5.jpg" class="zoom1" style="height: 220px; width: 55%;text-decoration: none;" .alt="No Such Image Exists!" title="Business Shirt" />
+</a>
+ <div>
+  <p class="w3-hover-text-green" style="cursor:pointer;">Business Shirt</p>
+          <label style="font-size: 26px" class="label1">2,000/-</label>
+          <label style="text-decoration: line-through; font-size: 18px; color: #ccc" class="label1">4,000/-</label>
+           <label style="font-size: 14px;color: orange">50% OFF</label>                   
+           </div>
+          <div style="background-color: ">
+          <button class="w3-btn w3-blue">Add to Cart</button>
+            <a href="buyT-shirts&shirts8.html"> <button class="w3-btn w3-indigo">Buy Now</button></a>
+            </div>
+</div>
+<div class="w3-third w3-container" style="box-shadow: 4px 4px 4px #bfbfbf">
+   <a href="T-Shirts & Shirts.html">
+<img src="T-Shirts & Shirts/2.jpeg" class="zoom1" ; style="height: 220px; width: 45%" .alt="No Such Image Exists!" title="Round Neck T-Shirt" />
+</a>
+ <div>
+  <p class="w3-hover-text-green" style="cursor:pointer;">Round Neck T-Shirt</p>
+          <label style="font-size: 26px" class="label1">1,500/-</label>
+          <label style="text-decoration: line-through; font-size: 18px; color: #ccc" class="label1">3,000/-</label>
+           <label style="font-size: 14px;color: orange">50% OFF</label>                  
+           </div>
+          <div style="background-color: ">
+          <button class="w3-btn w3-blue">Add to Cart</button>
+           <a href="buyT-shirts&shirts2.html"><button class="w3-btn w3-indigo">Buy Now</button></a>
+            </div>
+</div>
+<div class="w3-third w3-container" style="box-shadow: 4px 4px 4px #bfbfbf">
+   <a href="T-Shirts & Shirts.html">
+<img src="T-Shirts & Shirts/4.jpeg" class="zoom1" style="height: 220px; width: 40%" .alt="No Such Image Exists!" title=" Elephant Graphic T-Shirt" />
+</a>
+ <div>
+  <p class="w3-hover-text-green" style="cursor:pointer;">Elephant Graphic T-Shirt</p>
+          <label style="font-size: 26px" class="label1">1,000/-</label>
+          <label style="text-decoration: line-through; font-size: 18px; color: #ccc" class="label1">2,000/-</label>
+           <label style="font-size: 14px;color: orange">50% OFF</label>                  
+           </div>
+          <div style="background-color: ">
+          <button class="w3-btn w3-blue">Add to Cart</button>
+          <a href="buyT-shirts&shirts4.html"><button class="w3-btn w3-indigo">Buy Now</button></a>
+            </div>
+</div>
+</div>
+
+
+<div class="w3-row" style="height: 300px">
+<div class="w3-third w3-container" style="box-shadow: 4px 4px 4px #bfbfbf; ">  
+        <a href="apple.html"><img src="apple/1.jpeg" style="width: 80%;height: 250px " class="zoom1" title="iPhone 6s Plus"></a>
+ <div>
+  <p class="w3-hover-text-green" style="cursor:pointer;">Apple iPhone 6s Plus</p>
+          <label style="font-size: 26px" class="label1">31,200/-</label>
+          <label style="text-decoration: line-through; font-size: 18px; color: #ccc" class="label1">62,400/-</label>
+           <label style="font-size: 14px;color: orange">50% OFF</label>                  
+           </div>
+          <div style="background-color: ">
+          <button class="w3-btn w3-blue">Add to Cart</button>
+          <a href="buyApple1.html"><button class="w3-btn w3-indigo">Buy Now</button></a>
+            </div>
+</div>
+<div class="w3-third w3-container" style="box-shadow: 4px 4px 4px #bfbfbf">
+<a href="Mi.html"><img src="Mi/4.jpeg" style="width: 35%;height: 250px" class="zoom1" title="mi-max-2 black"></a>
+
+ <div>
+  <p class="w3-hover-text-green" style="cursor:pointer;">Mi-max-2 black</p>
+          <label style="font-size: 26px" class="label1">18,200/-</label>
+          <label style="text-decoration: line-through; font-size: 18px; color: #ccc" class="label1">36,400/-</label>
+           <label style="font-size: 14px;color: orange">50% OFF</label>                  
+           </div>
+          <div style="background-color: ">
+          <button class="w3-btn w3-blue">Add to Cart</button>
+          <a href="BuyMi4.html">  <button class="w3-btn w3-indigo">Buy Now</button></a>
+            </div>
+</div>
+<div class="w3-third w3-container" style="box-shadow: 4px 4px 4px #bfbfbf">
+   <a href="samsung.html">
+<img src="samsung/11.jpeg" class="zoom1" style="width: 35%;height: 250px" .alt="No Such Image Exists!" title="Samsung Galaxy J3 Pro" />
+</a>
+ <div>
+ <p class="w3-hover-text-green" style="cursor:pointer;">Samsung Galaxy J3 Pro</p>
+          <label style="font-size: 26px" class="label1">12,200/-</label>
+          <label style="text-decoration: line-through; font-size: 18px; color: #ccc" class="label1">24,400/-</label>
+           <label style="font-size: 14px;color: orange">50% OFF</label>                  
+           </div>
+          <div style="background-color: ">
+          <button class="w3-btn w3-blue">Add to Cart</button>
+          <a href="buySamsung11.html"> <button class="w3-btn w3-indigo">Buy Now</button></a>
+            </div>
+</div>
+</div>
+
+<div class="w3-row" style="height: 300px">
+<div class="w3-third w3-container" style="box-shadow: 4px 4px 4px #bfbfbf; ">  
+        <a href="Tops & Shirts.html"><img src="Tops & Shirts/1.jpg" style="width: 70%;height: 250px " class="zoom1" title="American Denim Shirt"></a>
+ <div>
+   <p class="w3-hover-text-green" style="cursor:pointer;">American Denim Shirt</p>
+          <label style="font-size: 26px" class="label1">2,000/-</label>
+          <label style="text-decoration: line-through; font-size: 18px; color: #ccc" class="label1">4,000/-</label>
+           <label style="font-size: 14px;color: orange">50% OFF</label>                  
+           </div>
+          <div style="background-color: ">
+          <button class="w3-btn w3-blue">Add to Cart</button>
+          <a href="buyTops & Shirts.html"><button class="w3-btn w3-indigo">Buy Now</button></a>
+            </div>
+</div>
+<div class="w3-third w3-container" style="box-shadow: 4px 4px 4px #bfbfbf">
+<a href="Tops & Shirts3.html"><img src="Tops & Shirts3/14.jpg" style="width: 60%;height: 250px" class="zoom1" title="Sleeveless Leisure Top"></a>
+
+ <div>
+   <p class="w3-hover-text-green" style="cursor:pointer;">Sleeveless Leisure Top</p>
+          <label style="font-size: 26px" class="label1">2,000/-</label>
+          <label style="text-decoration: line-through; font-size: 18px; color: #ccc" class="label1">4,000/-</label>
+           <label style="font-size: 14px;color: orange">50% OFF</label>                  
+           </div>
+          <div style="background-color: ">
+          <button class="w3-btn w3-blue">Add to Cart</button>
+          <a href="buyTops&Shirts3.14.html"><button class="w3-btn w3-indigo">Buy Now</button></a>
+            </div>
+</div>
+<div class="w3-third w3-container" style="box-shadow: 4px 4px 4px #bfbfbf">
+   <a href="Tops & Shirts3.html">
+<img src="Tops & Shirts3/4.jpg" class="zoom1" style="width:70%;height: 250px" .alt="No Such Image Exists!" title="Number Pattern Top"/>
+</a> 
+ <div>
+  <p class="w3-hover-text-green" style="cursor:pointer;">Number Pattern Top</p>
+          <label style="font-size: 26px" class="label1">2,000/-</label>
+          <label style="text-decoration: line-through; font-size: 18px; color: #ccc" class="label1">4,000/-</label>
+           <label style="font-size: 14px;color: orange">50% OFF</label>                  
+           </div>
+          <div style="background-color: ">
+          <button class="w3-btn w3-blue">Add to Cart</button>
+          <a href="buyTops&Shirts3.4.html"><button class="w3-btn w3-indigo">Buy Now</button></a>
+            </div>
+</div>
+</div>
+
+<div class="w3-row">
+<div class="w3-third w3-container" style="box-shadow: 4px 4px 4px #bfbfbf">  
+        <a href="lap.html">
+<img src="lap/3.png" class="zoom1" style="height: 180px" .alt="No Such Image Exists!" title="Lenovo Gaming Laptop" />
+</a>
+ <div>
+  <p class="w3-hover-text-green" style="cursor:pointer;">Lenovo Gaming Laptop</p>
+          <label style="font-size: 26px" class="label1">53,200/-</label>
+          <label style="text-decoration: line-through; font-size: 18px; color: #ccc" class="label1">86,400/-</label>
+           <label style="font-size: 14px;color: orange">25% OFF</label>                   
+           </div>
+          <div style="background-color: ">
+          <button class="w3-btn w3-blue">Add to Cart</button>
+          <a href="buylap3.html"><button class="w3-btn w3-indigo">Buy Now</button></a>
+            </div>
+</div>
+<div class="w3-third w3-container" style="box-shadow: 4px 4px 4px #bfbfbf">
+   <a href="lap.html">
+<img src="lap/7.jpg" class="zoom1" ; style="height: 180px" .alt="No Such Image Exists!" title="Lenovo Next Gen Laptop" />
+</a>
+ <div>
+  <p class="w3-hover-text-green" style="cursor:pointer;">Lenovo Next Gen Laptop</p>
+          <label style="font-size: 26px" class="label1">37,200/-</label>
+          <label style="text-decoration: line-through; font-size: 18px; color: #ccc" class="label1">55,300/-</label>
+           <label style="font-size: 14px;color: orange">25% OFF</label>                  
+           </div>
+          <div style="background-color: ">
+          <button class="w3-btn w3-blue">Add to Cart</button>
+          <a href="buylap7.html"><button class="w3-btn w3-indigo">Buy Now</button></a>
+            </div>
+</div>
+<div class="w3-third w3-container" style="box-shadow: 4px 4px 4px #bfbfbf">
+   <a href="lap.html">
+<img src="lap/16.png" class="zoom1" style="height: 180px" .alt="No Such Image Exists!" title="HP Inspiron Laptop" />
+</a>
+ <div>
+  <p class="w3-hover-text-green" style="cursor:pointer;">HP Inspiron Laptop</p>
+          <label style="font-size: 26px" class="label1">48,500/-</label>
+          <label style="text-decoration: line-through; font-size: 18px; color: #ccc" class="label1">66,000/-</label>
+           <label style="font-size: 14px;color: orange">28% OFF</label>                  
+           </div>
+          <div style="background-color: ">
+          <button class="w3-btn w3-blue">Add to Cart</button>
+          <a href="buylap16.html"><button class="w3-btn w3-indigo">Buy Now</button></a>
+            </div>
+</div>
+</div>
+
+<div class="w3-row">
+<div class="w3-third w3-container" style="box-shadow: 4px 4px 4px #bfbfbf">  
+        <a href="Jeans & Jeggings.html">
+<img src="Jeans & Jeggings/3.jpeg" class="zoom1" style="height: 280px; width: 65%" .alt="No Such Image Exists!" title="FBB  Jegging" />
+</a>
+ <div>
+  <p class="w3-hover-text-green" style="cursor:pointer;">FBB  Jegging</p>
+          <label style="font-size: 26px" class="label1">1,500/-</label>
+          <label style="text-decoration: line-through; font-size: 18px; color: #ccc" class="label1">3,000/-</label>
+           <label style="font-size: 14px;color: orange">50% OFF</label>                   
+           </div>
+          <div style="background-color: ">
+          <button class="w3-btn w3-blue">Add to Cart</button>
+          <a href="buyjeans3.html"><button class="w3-btn w3-indigo">Buy Now</button></a>
+            </div>
+</div>
+<div class="w3-third w3-container" style="box-shadow: 4px 4px 4px #bfbfbf">
+   <a href="Jeans & Jeggings.html">
+<img src="Jeans & Jeggings/12.jpeg" class="zoom1" ; style="height: 280px; width: 55%" .alt="No Such Image Exists!" title="Vogue Jeans" />
+</a>
+ <div>
+    <p class="w3-hover-text-green" style="cursor:pointer;">Vogue Jeans</p>
+          <label style="font-size: 26px" class="label1">1,500/-</label>
+          <label style="text-decoration: line-through; font-size: 18px; color: #ccc" class="label1">3,000/-</label>
+           <label style="font-size: 14px;color: orange">50% OFF</label>                  
+           </div>
+          <div style="background-color: ">
+          <button class="w3-btn w3-blue">Add to Cart</button>
+          <a href="buyjeans12.html"><button class="w3-btn w3-indigo">Buy Now</button></a>
+            </div>
+</div>
+<div class="w3-third w3-container" style="box-shadow: 4px 4px 4px #bfbfbf">
+   <a href="Jeans & Jeggings.html">
+<img src="Jeans & Jeggings/14.jpeg" class="zoom1" style="height: 280px" .alt="No Such Image Exists!" title=" Skinny Jeans" />
+</a>
+ <div>
+  <p class="w3-hover-text-green" style="cursor:pointer;">Skinny Jeans</p>
+          <label style="font-size: 26px" class="label1">2,000/-</label>
+          <label style="text-decoration: line-through; font-size: 18px; color: #ccc" class="label1">4,000/-</label>
+           <label style="font-size: 14px;color: orange">50% OFF</label>                  
+           </div>
+          <div style="background-color: ">
+          <button class="w3-btn w3-blue">Add to Cart</button>
+          <a href="buyjeans14.html"><button class="w3-btn w3-indigo">Buy Now</button></a>
+            </div>
+</div>
+</div>
+<br>
+
+
+
+                    <div style=" width: 100%; background-color:#f2f2f2;margin: auto;  ">
+            <a href="myproject1.html" style="text-decoration: none; font-size: 22px "><button class="w3-btn w3-blue" style="font-size:25px; width: 100%;">Back To Home Page</button>
+</a>
+          </div>
+           </center>
+
+<div class="w3-row container" style=" width: 97%;margin: auto;  ">
+          <div id="ABOUT" class="column2" style="background-color: #005ce6"> 
+            <hr color="#f2f2f2">
+ <p>ABOUT</p>
+           <p class="a1" ><a href="AboutUs.html" class="active" style="text-decoration: none;"> About Us</a></p>
+           <p class="a1"><a href="contact2.html" class="active" style="text-decoration: none;">Contact Us</a></p>
+           <p class="a1"><a href="careers.html" class="active" style="text-decoration: none;">Careers</a></p>
+           <p class="a1"><a href="#" class="active" style="text-decoration: none;">Press</a></p>
+          </div>
+          <div id="HELP"; class="column2" style="background-color:  #0066ff">
+            <hr color="#f2f2f2">
+            <p>HELP</p>
+            <p class="a1"><a href="Payments.html" class="active" style="text-decoration: none;">Payments</a></p>
+            <p class="a1"><a href="Shipping.html" class="active" style="text-decoration: none;">Shipping</a></p>
+            <p class="a1"><a href="#" class="active" style="text-decoration: none;">FAQ</a></p>
+            <p class="a1"><a href="return" class="active" style="text-decoration: none;">Cancellation & Returns</a></p>
+          </div>
+           <div id="POLICY" class="column2" style="background-color: #1a75ff">
+            <hr color="#f2f2f2">
+            <P>POLICY</P>
+            <p class="a1"><a href="return.html" class="active" style="text-decoration: none;">Return Policy</a></p>
+            <p class="a1"><a href="#" class="active" style="text-decoration: none;">Terms Of Use</a></p>
+            <p class="a1"><a href="security.html" class="active" style="text-decoration: none;">Security</a></p>
+            <p class="a1"><a href="Privacy.html" class="active" style="text-decoration: none;">Privacy</a></p>
+          </div>
+          <div id="MAIL" class="column2" style="background-color:  #3385ff;font-family: comic sans ms;
+      color: #ffff80;font-style: bold">
+            <p>MAIL US</p>
+            <p>Get It Shopping Hooghly</p>
+
+        <p>Ground Floor, Embassy Tech Village,</p>
+
+        <p>Outer Ring Road, Chuchura Village,</p>
+
+        <p>Hobli, West Bengal East Taluk,</p>
+
+        <p> Hooghly District,</p>
+
+        <p>West Bengal, India, 560103.</p>
+
+        <p>Telephone : 9830794025,</p>
+
+        <p>8013326678, 7278796157</p>
+          </div>
+         </div>
+
+
+
+
+
+</body>
+</html>

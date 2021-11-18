@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>assignment</title>
+	<script type="text/javascript">
+	function fun(){
+		var t1=number(document.getElementById("t1").value);
+		var t2=number(document.getElementById("t2").value);
+		var r1=document.getElementById("r1");
+		var r2=document.getElementById("r2");
+		var r3=document.getElementById("r3");
+		var r4=document.getElementById("r4");
+		if(r1.checked) 
+			alert((t1+t2));
+		else if(r2.checked)
+			alert((t1-t2));
+        else if(r3.checked){
+        	if(t1>t2) alert(t1);
+        	else if(t2>t1) alert(t2);
+        	else alert=("equal");
+        }
+        
+        else if(r4.checked){
+            if(t1<t2) alert(t1);
+            else if(t2<t1) alert(t2);
+            else alert=("equal");
+        }
+        }
+    </script>
+    </head>
+    <body>
+        
+    	no1:<input type="number"name="t1"id="t1"placeholder="First number"><br/>
+        no2:<input type="number"name="t2"id="t2"placeholder="second number"><br/>
+        Add:<input type="radio"name="r1"id="r1"><br/>
+        Sub:<input type="radio"name="r2"id="r2"><br/>
+        Max:<input type="radio"name="r3"id="r3"><br/>
+        Min:<input type="radio"name="r4"id="r4"><br/>
+        <input type="button"name="btn" value="calculate"oneclick="fun()">
+    
+
+    </body>
+    </html>

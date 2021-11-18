@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>2nd day of JQuery</title>
+	<style type="text/css">
+	.frm{
+		color: dodgerblue;
+		padding: 20px;
+		width: 20%;
+		margin:auto;
+		box-shadow: 3px 3px 3px #b3b3ff;
+    }
+    label{
+    	margin-left:top;
+    }
+    .input{
+			margin-left:10px;
+			width:90%;
+			padding:5px;
+			border:none;
+			outline:none;
+			border-bottom: 1px solid dodgerblue;
+		}
+		.btn:focus{
+			-webkit-transition:all 0.6s ease-in-out;
+			background-color: green;
+		}
+	.btn1{
+		background-color:blue;
+		padding: 10px;
+		color: #fff; 
+	}
+	.btn2{
+		background-color: red;
+		padding: 10px;
+		color: #fff;
+
+	}
+		
+	</style>
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+        $("#show").click(function(){
+        $("form").show();
+        });
+        $("#hide").click(function(){
+        $("form").hide();
+        });
+		});
+	</script>
+</head>
+<body>
+     <div>
+	<form class="frm">
+		<header><h2 align="center" class="h2">Log In</h2></header>
+		<div>
+		<label>Name :</label>
+		<input type="text" name="name" id="name" required placeholder="type your name. . ." class="input">
+		</div>
+		<div>
+		<label>Phone :</label>
+		<input type="text" name="Phone" id="Phone" required placeholder="Phone number. . ." class="input">
+		</div>
+		<div>
+		<label>Email :</label>
+		<input type="Email" name="Email" id="Email" required placeholder="john@gmail.com" class="input">
+		</div>
+		<div>
+		<label>Password :</label>
+		<input type="text" name="pass" id="pass" required placeholder="Password" class="input">
+		</div>
+		
+	</form>
+	</div>
+	<div align="center">
+			<button id="show" class="btn btn1">Sign Up</button>
+			<button id="hide" class="btn btn2">Cancel</button>
+		</div>
+
+</body>
+</html>

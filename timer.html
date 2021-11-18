@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Timer</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style type=""></style>
+</head>
+<body>
+  <div style="margin-top:50px">
+  	<b class="w3-text-gray" style="margin-left: 20px;font-size: 18px">Sale Until</b>
+<span id="days" class=" w3-round-xxlarge" style="margin-left:10px;color:orange; font-size:18px;font-family:Hobo Std;padding:20px 12px;height: 140px;width: 200px; border-radius: 100px;background-image: radial-gradient( white 60%, blue 95%);"></span>
+<span id="hours" class=" w3-round-xxlarge" style="color:orange; font-size:18px;font-family:Hobo Std;padding:20px 12px;height: 140px;width: 200px; border-radius: 100px;background-image: radial-gradient( white 60%, blue 95%);"></span>
+<span id="minutes" class=" w3-round-xxlarge" style="color:orange; font-size:18px;font-family:Hobo Std;padding:20px 10px;height: 140px;width: 200px; border-radius: 100px;background-image: radial-gradient( white 60%, blue 95%);"></span>
+<span id="seconds" class=" w3-round-xxlarge" style="color:orange; font-size:18px;font-family:Hobo Std;padding:20px 12px;height: 140px;width: 200px; border-radius: 100px;background-image: radial-gradient( white 60%, blue 95%);"></span>
+</div>
+
+	    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+   <script type="text/javascript" src="jquery.js"></script>
+     <script type="text/javascript">
+
+   setInterval(function(){
+    // set whatever future date / time you want here, together with
+    // your timezone setting...
+    var future = new Date("Sep 20 2018 21:15:00 GMT+0200");
+    var now = new Date();
+    var difference = Math.floor((future - now) / 1000);
+
+    var seconds = fixIntegers(difference % 60);
+    difference = Math.floor(difference / 60);
+
+    var minutes = fixIntegers(difference % 60);
+    difference = Math.floor(difference / 60);
+
+    var hours = fixIntegers(difference % 24);
+    difference = Math.floor(difference / 24);
+
+    var days = difference;
+
+    $("#seconds").text(seconds + "S");
+    $("#minutes").text(minutes + "M");
+    $("#hours").text(hours + "h");
+    $("#days").text(days + "d");
+}, 1000);
+
+
+function fixIntegers(integer)
+{
+    if (integer < 0)
+        integer = 0;
+    if (integer < 10)
+        return "0" + integer;
+    return "" + integer;
+}
+
+</script>
+
+</body>
+</html>

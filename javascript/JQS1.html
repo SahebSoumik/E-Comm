@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Welcome...</title>
+	<style type="text/css">
+		#d1{
+			background-color:pink;
+			height: 100px;
+			width: 100px;
+		}
+	</style>
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(e){
+			$('#b1').click(function(e){
+				$('#d1').hide().show().slideUp().slideDown();
+			});
+		});
+	</script>
+
+</head>
+<body>
+	<header><h1>JQuery Chaining</h1></header>
+	<div id="d1">Hello</div><br/>
+	<div>
+	<button id="b1">Click here</button>
+</div>
+</body>
+</html>

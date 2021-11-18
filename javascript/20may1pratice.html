@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>welcome</title>
+	<script type="text/javascript">
+	function fun(){
+		var age= document.getElementById("age");
+		if(age.checkValidity()){
+			document.getElementById("errorAge").innerHTML="";
+
+       }else{document.getElementById("errorAge").innerHTML="<font color='red'>"
+	   +age.validationMessage+"</font>";
+}
+}
+
+		
+	
+
+	</script>
+</head>
+<body>
+	<div>
+		<label>Age:</label>
+		<input type="number" name="age" id="age" max="80" min="18" onblur="fun()"required>
+		<span id="errorAge"></span>
+</div>
+</body>
+</html>

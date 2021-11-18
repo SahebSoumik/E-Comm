@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head><title>Registration</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script type="text/javascript">
+var captcha;
+ 
+function generateCaptcha() {
+    var a = Math.floor((Math.random() * 10));
+    var b = Math.floor((Math.random() * 10));
+    var c = Math.floor((Math.random() * 10));
+    var d = Math.floor((Math.random() * 10));
+ 
+    captcha=a.toString()+b.toString()+c.toString()+d.toString();
+    
+    document.getElementById("captcha").value = captcha;
+}
+ 
+function check(){
+    var input=document.getElementById("inputText").value;
+ 
+    if(input==captcha){
+        alert("Equal");
+    }
+    else{
+        alert("Not Equal");
+    }
+}
+</script>
+
+
+<style type="text/css">
+
+	 .header{ 
+        width:100%;
+        font-family: Imprima;
+        font-size: 30px;
+   }
+
+		.container{
+			padding:0px;
+      top:0;
+			width:40%;
+			margin:auto;
+			font-family: Comic Sans Ms;
+			box-shadow: 6px 6px 6px darkgray;
+      background-color: white;
+      border: 1px solid #ccc;
+
+		}
+		label{
+			margin-left: 10px;
+      padding: 20px;
+		}
+		.input{
+			margin-left:20px;
+			width:90%;
+			padding:20px;
+			border:none;
+			outline:none;
+			border-bottom:1px solid #ccc;
+		}
+		.input:focus{
+			-webkit-transition:all 0.6s ease-in-out;
+            border-bottom:2px solid #318446;
+		}
+		.w3-btn{
+			width: 40%;
+      margin-bottom: 20px;
+		}
+		.w3-btn:active{
+			opacity: 0.7;
+		}
+		.frm-group{
+			margin-top:5px;
+		}
+	    div{
+      		-webkit-transition:all 0.4s ease-in-out;
+      		width: 100%;
+          
+     			}
+
+ 
+.float{
+  position:fixed;
+  width:55px;
+  height:55px;
+  left:25px;
+  top: 10px;
+  background-color:#efeff5;
+  color:gray;
+  border-radius:50px;
+  text-align:center;
+  box-shadow: 3px 3px 3px 1px #999;
+  opacity: 0.7;
+}
+.my-float{
+  margin-top:16px;
+  font-size: 25px;
+}
+	@media only screen and (max-width: 900px)
+	 	{
+	 		 .container{
+               width:70%;
+               padding: 8px;
+
+	 		 }
+	 		 div{
+      			-webkit-transition:all 0.4s ease-in-out;
+      			width: 100%;
+          
+     			}
+     	.w3-btn{
+     		width:40%;
+     	}
+	}
+
+@media only screen and (max-width: 500px)
+	 	{
+	 		 .container{
+               width:100%;
+
+	 		 }
+	 		 div{
+      			-webkit-transition:all 0.4s ease-in-out;
+      			width: 100%;
+          
+     			}
+	 
+     	.w3-btn{
+     		width:45%;
+        box-shadow: 3px 3px 3px #ccc;
+     	}
+         .header{
+        width:100%;
+        font-size: 25px;
+   }
+   .float{
+    top:0;
+   }
+	}
+
+
+</style>
+</head>
+<body  onload="generateCaptcha()" style="background-color: #efeff5;">
+
+  <!-- Code begins here -->
+
+
+<a href="log-image.html" class="float">
+<i class="fa fa-arrow-left my-float" style="font-size:;"></i>
+</a>
+
+<form name="frm" method="post" action="Reg.html">
+<br>
+<br>
+<div class="container">
+    <header class="w3-panel w3-blue"  align="center"><p class="header">Registration Here</p></header>
+    
+    <div class="frm-group">
+   
+    <label>Name:</label>
+    <input type="name" name="nm" id="nm" required placeholder="Name" class="input" align="center">
+  </div>
+  <div class="frm-group">
+    <label>Phone:</label>
+    <input type="number" name="phone" id="phone" required placeholder="Phone" class="input" align="center">
+  </div>
+
+  <div class="frm-group">
+    <label>E-mail:</label>
+    <input type="email" name="email" id="email" required placeholder="e.g:abc@gmail.com" class="input" align="center">
+  </div>
+<div class="frm-group">
+  <label>Password:</label>
+  <input type="password" name="pass1" id="pass1" required placeholder="Password" class="input" align="center">
+</div>
+<div class="frm-group">
+  <label>Confirm Password:</label>
+  <input type="password" name="pass2" id="pass2" required placeholder="Confirm Password" class="input" align="center">
+</div>
+<div class="frm-group">
+	<label>Address:</label>
+	<textarea class="input" align="center"></textarea>
+</div>
+<div class="w3-container w3-border w3-border-gray frm-group" align="center">
+	<label >Fill The Capcha:-</label>
+	<input type="text" id="captcha" class="input" align="center" disabled/>
+<input type="text" id="inputText" class="input" align="center" />
+<br>
+<br>
+<button onclick="generateCaptcha()" class="w3-btn w3-padding-large w3-border w3-border-indigo w3-pale-blue">Refresh</button>
+<button onclick="check()" class="w3-btn w3-padding-large w3-border w3-border-indigo w3-pale-blue">Submit</button>
+<br>
+<br>
+</div>
+	<div class="frm-group" align="center">
+    <button type="Registration" class="w3-btn w3-padding-large w3-blue">Registration</button>
+    <button type="Reset" class="w3-btn w3-padding-large w3-blue">Reset</button>
+</div>
+</div>
+<br><br>
+</form>
+</body>
+</html>
